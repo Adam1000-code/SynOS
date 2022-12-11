@@ -12,10 +12,12 @@ namespace SynOS.Commands
 
         public CommandManager()
         {
-            this.commands = new List<Command>(3);
+            this.commands = new List<Command>(1);
             this.commands.Add(new Help("help"));
             this.commands.Add(new Version("ver"));
             this.commands.Add(new CosmosInfo("kernel.info"));
+            this.commands.Add(new Clear("clear"));
+            this.commands.Add(new File("file"));
         }
 
         public String processInput(String input)
@@ -24,7 +26,7 @@ namespace SynOS.Commands
 
             String label = split[0];
 
-            List<String> args = new List<String>();
+            List<String> args=new List<String>();
 
             int ctr = 0;
             foreach(String s in split)
@@ -33,17 +35,17 @@ namespace SynOS.Commands
                 {
                     args.Add(s);
                 }
-                ++ctr;
+                ctr++;
             }
 
             foreach(Command cmd in this.commands)
             {
-                if(cmd.name == label)
+                if(cmd.name==label)
                 {
                     return cmd.execute(args.ToArray());
                 }
             }
-            return "Your Command \""+label+"\" does not exist!";
+            return "Your command \""+label+"\" does not exist!";
         }
     }
 }

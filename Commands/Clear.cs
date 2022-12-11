@@ -1,18 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace SynOS.Commands
 {
-    public class CosmosInfo : Command
+    public class Clear : Command
     {
-        public CosmosInfo (String name) : base (name) { }
+        public Clear (String name) : base (name) { }
 
         public override String execute(String[] args)
         {
-            return "Cosmos Kernel. Created by the Cosmos Project.";
+            Console.Clear();
+            return "";
         }
     }
 }

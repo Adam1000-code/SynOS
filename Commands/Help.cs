@@ -8,11 +8,17 @@ namespace SynOS.Commands
 {
     public class Help : Command
     {
-        public Help(String name) : base(name) { }
+        public Help (String name) : base (name) { }
 
         public override String execute(String[] args)
         {
-            return "Welcome to the SynOS help command. Commands: 'help', 'ver', 'kernel.info'.";
+            Console.WriteLine("Welcome to the SynOS help command.");
+            Console.WriteLine("Commands:");
+            Console.WriteLine("help");
+            Console.WriteLine("ver");
+            Console.WriteLine("clear");
+            Console.WriteLine("kernel.info");
+            return "file";
         }
     }
 }

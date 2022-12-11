@@ -12,6 +12,6 @@ namespace SynOS.Commands
 
         public Command (String name) { this.name = name; }
 
-        public virtual String execute (String[] args) { return ""; }
+        public virtual String execute(String[] args) { return ""; }
     }
 }
