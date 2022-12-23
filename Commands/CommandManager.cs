@@ -18,6 +18,8 @@ namespace SynOS.Commands
             this.commands.Add(new CosmosInfo("kernel.info"));
             this.commands.Add(new Clear("clear"));
             this.commands.Add(new File("file"));
+            this.commands.Add(new Reboot("reboot"));
+            this.commands.Add(new Shutdown("shutdown"));
         }
 
         public String processInput(String input)

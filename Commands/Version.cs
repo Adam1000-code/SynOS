@@ -12,13 +12,14 @@ namespace SynOS.Commands
 
         public override String execute(String[] args)
         {
-            Console.WriteLine(" _______  __   __  __    _  _______  _______");
-            Console.WriteLine("|       ||  | |  ||  |  | ||       ||       |");
-            Console.WriteLine("|  _____||  |_|  ||   |_| ||   _   ||  _____|");
-            Console.WriteLine("| |_____ |       ||       ||  | |  || |_____ ");
-            Console.WriteLine("|_____  ||_     _||  _    ||  |_|  ||_____  |");
-            Console.WriteLine(" _____| |  |   |  | | |   ||       | _____| |");
-            Console.WriteLine("|_______|  |___|  |_|  |__||_______||_______|");
+            Console.WriteLine(@"  _____              ____   _____ ");
+            Console.WriteLine(@" / ____|            / __ \ / ____|");
+            Console.WriteLine(@"| (___  _   _ _ __ | |  | | (___  ");
+            Console.WriteLine(@" \___ \| | | | '_ \| |  | |\___ \ ");
+            Console.WriteLine(@" ____) | |_| | | | | |__| |____) |");
+            Console.WriteLine(@"|_____/ \__, |_| |_|\____/|_____/ ");
+            Console.WriteLine(@"         __/ |                    ");
+            Console.WriteLine(@"        |___/                     ");
             return "SynOS beta 0.0.5, Created by Adam Zeiser.";
         }
     }
