@@ -20,7 +20,7 @@ namespace SynOS.Commands
             Console.WriteLine(@"|_____/ \__, |_| |_|\____/|_____/ ");
             Console.WriteLine(@"         __/ |                    ");
             Console.WriteLine(@"        |___/                     ");
-            return "SynOS beta 0.0.5, Created by Adam Zeiser.";
+            return "SynOS beta 0.0.6, Created by Adam Zeiser.";
         }
     }
 }

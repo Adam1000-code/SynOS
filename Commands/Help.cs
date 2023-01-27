@@ -18,7 +18,9 @@ namespace SynOS.Commands
             Console.WriteLine("ver");
             Console.WriteLine("clear");
             Console.WriteLine("kernel.info");
-            return "file";
+            Console.WriteLine("file");
+            Console.WriteLine("reboot");
+            return "shutdown";
         }
     }
 }

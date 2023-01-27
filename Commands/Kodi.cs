@@ -13,13 +13,7 @@ namespace SynOS.Commands
 
         public override String execute(String[] args)
         {
-            String response = "";
-
-            switch(response)
-            {
-
-            }
-            return response;
+            return "";
         }
     }
 }

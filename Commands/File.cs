@@ -44,7 +44,7 @@ namespace SynOS.Commands
                     }
                     break;
 
-                case "createdir":
+                case "mkdir":
                     try
                     {
                         Sys.FileSystem.VFS.VFSManager.CreateDirectory(args[1]);
@@ -70,7 +70,7 @@ namespace SynOS.Commands
                     }
                     break;
 
-                case "writestr":
+                case "edit":
                     try
                     {
                         FileStream fs = (FileStream)Sys.FileSystem.VFS.VFSManager.GetFile(args[1]).GetFileStream();
@@ -110,7 +110,7 @@ namespace SynOS.Commands
                     }
                     break;
 
-                case "readstr":
+                case "read":
                     try
                     {
                         FileStream fs = (FileStream)Sys.FileSystem.VFS.VFSManager.GetFile(args[1]).GetFileStream();
@@ -141,11 +141,10 @@ namespace SynOS.Commands
                     {
                         Console.WriteLine("To create text file: file create (cosmos location)(filename).txt");
                         Console.WriteLine("To delete text file: file delete (cosmos location)(filename).txt");
-                        Console.WriteLine("To write text to text file: file writestr (cosmos location)(filename).txt (text)");
-                        Console.WriteLine("To read text in text file: file readstr (cosmos location)(filename).txt");
-                        Console.WriteLine("To create directory: file createdir (cosmos location)(directory name)");
+                        Console.WriteLine("To write text to text file: file edit (cosmos location)(filename).txt (text)");
+                        Console.WriteLine("To read text in text file: file read (cosmos location)(filename).txt");
+                        Console.WriteLine("To create directory: file mkdir (cosmos location)(directory name)");
                         Console.WriteLine("To delete/remove directory: file remdir (cosmos location)(directory name)");
-                        Console.WriteLine("At the moment, the filesystem isn't working. It will be fixed soon.");
                         break;
                     }
                     catch (Exception ex)

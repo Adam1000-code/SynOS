@@ -32,7 +32,7 @@ namespace SynOS
 
         protected override void Run()
         {
-            Console.Write(@"S:\");
+            Console.Write(@"S:\>");
             String response;
             String input = Console.ReadLine();
             response = this.commandManager.processInput(input);
