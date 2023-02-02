@@ -9,9 +9,9 @@ namespace SynOS.Commands
 {
     public class Clear : Command
     {
-        public Clear (String name) : base (name) { }
+        public Clear (string name) : base (name) { }
 
-        public override String execute(String[] args)
+        public override string execute(string[] args)
         {
             Console.Clear();
             return "";

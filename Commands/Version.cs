@@ -8,9 +8,9 @@ namespace SynOS.Commands
 {
     public class Version : Command
     {
-        public Version (String name) : base(name) { }
+        public Version (string name) : base(name) { }
 
-        public override String execute(String[] args)
+        public override string execute(string[] args)
         {
             Console.WriteLine(@"  _____              ____   _____ ");
             Console.WriteLine(@" / ____|            / __ \ / ____|");
@@ -20,7 +20,7 @@ namespace SynOS.Commands
             Console.WriteLine(@"|_____/ \__, |_| |_|\____/|_____/ ");
             Console.WriteLine(@"         __/ |                    ");
             Console.WriteLine(@"        |___/                     ");
-            return "SynOS beta 0.0.6, Created by Adam Zeiser.";
+            return "SynOS beta 0.0.7, Created by Adam Zeiser.";
         }
     }
 }

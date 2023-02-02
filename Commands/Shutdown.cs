@@ -9,9 +9,9 @@ namespace SynOS.Commands
 {
     public class Shutdown : Command
     {
-        public Shutdown (String name) : base(name) { }
+        public Shutdown (string name) : base(name) { }
 
-        public override String execute(String[] args)
+        public override string execute(string[] args)
         {
             Console.WriteLine("Shutting down...");
             Thread.Sleep(1);

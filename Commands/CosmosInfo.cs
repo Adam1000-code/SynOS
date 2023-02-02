@@ -8,9 +8,9 @@ namespace SynOS.Commands
 {
     public class CosmosInfo : Command
     {
-        public CosmosInfo (String name) : base (name) { }
+        public CosmosInfo (string name) : base (name) { }
 
-        public override String execute(String[] args)
+        public override string execute(string[] args)
         {
             return "Cosmos Kernel. Created by the Cosmos Project.";
         }

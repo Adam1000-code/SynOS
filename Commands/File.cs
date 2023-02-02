@@ -10,11 +10,11 @@ namespace SynOS.Commands
 {
     public class File : Command
     {
-        public File (String name) : base (name) { }
+        public File (string name) : base (name) { }
 
-        public override String execute(String[] args)
+        public override string execute(string[] args)
         {
-            String response = "";
+            string response = "";
 
             switch(args[0])
             {
@@ -80,7 +80,7 @@ namespace SynOS.Commands
                             int ctr = 0;
                             StringBuilder sb = new StringBuilder();
 
-                            foreach(String s in args)
+                            foreach(string s in args)
                             {
                                 if(ctr>1)
                                 {
@@ -89,7 +89,7 @@ namespace SynOS.Commands
                                 ctr++;
                             }
 
-                            String txt = sb.ToString();
+                            string txt = sb.ToString();
                             Byte[] data = Encoding.ASCII.GetBytes(txt.Substring(0, txt.Length - 1));
 
                             fs.Write(data, 0, data.Length);

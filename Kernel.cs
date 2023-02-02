@@ -4,14 +4,15 @@ using System.Text;
 using Sys = Cosmos.System;
 using SynOS.Commands;
 using Cosmos.System.FileSystem;
+using SynOS.Graphics;
 
 namespace SynOS
 {
     public class Kernel : Sys.Kernel
     {
-
         private CommandManager commandManager;
         private CosmosVFS vfs;
+        public static GUI gui;
         protected override void BeforeRun()
         {
             this.vfs = new CosmosVFS();
@@ -32,9 +33,15 @@ namespace SynOS
 
         protected override void Run()
         {
+            if(Kernel.gui != null)
+            {
+                Kernel.gui.handleGUIInputs();
+                return;
+            }
+
             Console.Write(@"S:\>");
-            String response;
-            String input = Console.ReadLine();
+            string response;
+            string input = Console.ReadLine();
             response = this.commandManager.processInput(input);
             Console.WriteLine(response);
         }

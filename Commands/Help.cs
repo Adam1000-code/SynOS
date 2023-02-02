@@ -17,10 +17,11 @@ namespace SynOS.Commands
             Console.WriteLine("help");
             Console.WriteLine("ver");
             Console.WriteLine("clear");
-            Console.WriteLine("kernel.info");
+            Console.WriteLine("kernel");
             Console.WriteLine("file");
             Console.WriteLine("reboot");
-            return "shutdown";
+            Console.WriteLine("shutdown");
+            return "kodi";
         }
     }
 }

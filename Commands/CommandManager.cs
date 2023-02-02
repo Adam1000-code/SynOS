@@ -15,23 +15,24 @@ namespace SynOS.Commands
             this.commands = new List<Command>(1);
             this.commands.Add(new Help("help"));
             this.commands.Add(new Version("ver"));
-            this.commands.Add(new CosmosInfo("kernel.info"));
+            this.commands.Add(new CosmosInfo("kernel"));
             this.commands.Add(new Clear("clear"));
             this.commands.Add(new File("file"));
             this.commands.Add(new Reboot("reboot"));
             this.commands.Add(new Shutdown("shutdown"));
+            this.commands.Add(new Kodi("kodi"));
         }
 
-        public String processInput(String input)
+        public string processInput(string input)
         {
-            String[] split = input.Split(' ');
+            string[] split = input.Split(' ');
 
-            String label = split[0];
+            string label = split[0];
 
-            List<String> args=new List<String>();
+            List<string> args=new List<string>();
 
             int ctr = 0;
-            foreach(String s in split)
+            foreach(string s in split)
             {
                 if(ctr!=0)
                 {

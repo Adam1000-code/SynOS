@@ -8,10 +8,10 @@ namespace SynOS.Commands
 {
     public class Command
     {
-        public readonly String name;
+        public readonly string name;
 
-        public Command (String name) { this.name = name; }
+        public Command (string name) { this.name = name; }
 
-        public virtual String execute(String[] args) { return ""; }
+        public virtual string execute(string[] args) { return ""; }
     }
 }

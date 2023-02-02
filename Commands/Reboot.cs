@@ -9,7 +9,7 @@ namespace SynOS.Commands
 {
     public class Reboot : Command
     {
-        public Reboot (String name) : base(name) { }
+        public Reboot (string name) : base(name) { }
 
         public override string execute(string[] args)
         {

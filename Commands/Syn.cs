@@ -8,11 +8,11 @@ namespace SynOS.Commands
 {
     public class Syn : Command
     {
-        public Syn (String name) : base (name) { }
+        public Syn (string name) : base (name) { }
 
-        public override String execute(String[] args)
+        public override string execute(string[] args)
         {
-            String response = "";
+            string response = "";
 
             switch(args[0])
             {
